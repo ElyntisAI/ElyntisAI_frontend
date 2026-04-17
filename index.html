@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="any" href="/images/favicon.png" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png" />
+    <title>ElyntisAI — GPU-Accelerated AI Agent Platform</title>
+    <meta name="description" content="Deploy autonomous AI agents that think, decide, and execute workflows across your entire digital ecosystem." />
+    <meta name="author" content="ElyntisAI" />
+
+    <meta property="og:title" content="ElyntisAI — GPU-Accelerated AI Agent Platform" />
+    <meta property="og:description" content="Deploy autonomous AI agents that think, decide, and execute workflows across your entire digital ecosystem." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ElyntisAI" />
+    <meta name="twitter:image" content="/images/logo.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'WhmGaRKVfVVvDhLWh5GiMj5o',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+  </body>
+</html>
